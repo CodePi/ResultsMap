@@ -26,7 +26,7 @@
 #include <set>
 #include <deque>
 
-namespace boost_mod{
+namespace codepi{
 
    class bad_anyType_cast : public std::bad_cast
    {
@@ -261,7 +261,7 @@ namespace boost_mod{
       a1.swap(a2);
    }
 
-}; //namespace boost_mod
+}; //namespace codepi
 
 // Original Boost::any Copyright Kevlin Henney, 2000, 2001, 2002. All rights reserved.
 //

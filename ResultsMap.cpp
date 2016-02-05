@@ -5,7 +5,8 @@
 #include <vector>
 
 using namespace std;
-using namespace boost_mod;
+
+namespace codepi {
 
 ResultsMap& ResultsMap::operator()(const string& key){
   AnyType*ap = &valMap[key];
@@ -75,3 +76,5 @@ void ResultsMap::merge(const ResultsMap& other){
     valMap[i->first]=i->second;
   }
 }
+
+} // end namespace codepi

@@ -7,7 +7,7 @@
 #include<deque>
 
 using namespace std;
-using namespace boost_mod;
+using namespace codepi;
 
 int main(){
   ResultsMap rm;
@@ -51,9 +51,11 @@ int main(){
   try{
     // bad cast
     float& i=rm["q"].getRef<float>();
-  }catch(boost_mod::bad_anyType_cast&e){
-    cout<<"bad_anyType_cast caught\n";
+  }catch(bad_anyType_cast&e){
+    cout<<"Testing exceptions: bad_anyType_cast caught\n";
   }
-  
+
+  #ifdef WIN32
   getchar();
+  #endif
 }
