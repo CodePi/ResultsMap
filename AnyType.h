@@ -11,7 +11,7 @@
 // - Added toStream and toStreamContainer methods 
 // - Added operator<< for AnyType
 // - Added to<Type>() to convert contents to Type intelligently
-// - Added to_i(), to_f(), to_s() to convert to int, float, and string repectively
+// - Added to_i(), to_f(), to_s() to convert to int, double, and string repectively
 // - Added getRef<Type>() as a wrapper for anyType_cast (throws if used improperly)
 // - Added get<Type>() as a wrapper for anyType_cast (NULL if not valid)
 // - Removed dependancy on other parts of boost
