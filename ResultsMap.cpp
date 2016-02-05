@@ -1,4 +1,4 @@
-// From the personal library of Paul Ilardi (code@pilardi.com).
+// From the personal library of Paul Ilardi (http://github.com/CodePi).
 // Free to use or modify.
 
 #include "ResultsMap.h"

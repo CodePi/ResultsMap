@@ -1,11 +1,11 @@
-// From the personal library of Paul Ilardi (code@pilardi.com).
+// From the personal library of Paul Ilardi (http://github.com/CodePi).
 // Free to use or modify.
 
 #pragma once
 
 // Modified from boost::any
 // Original http://www.boost.org/libs/any
-// Modified by Paul Ilardi (code@pilardi.com)
+// Modified by Paul Ilardi (http://github.com/CodePi)
 
 // Changes:
 // - Added toStream and toStreamContainer methods 
