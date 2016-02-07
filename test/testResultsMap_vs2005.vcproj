@@ -174,11 +174,11 @@
 			>
 		</File>
 		<File
-			RelativePath=".\ResultsMap.cpp"
+			RelativePath="..\ResultsMap.cpp"
 			>
 		</File>
 		<File
-			RelativePath=".\ResultsMap.h"
+			RelativePath="..\ResultsMap.h"
 			>
 		</File>
 		<File
