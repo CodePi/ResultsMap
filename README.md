@@ -6,7 +6,7 @@ Compiles with C++11 compatible compilers. Tested with gcc 4.4 and Visual Studio 
 
 #### Example usage
 
-ResultsMap is a dynamically buildable tree with a string label at each node and a value (of any streamable type) at each leaf.
+ResultsMap is a dynamically buildable hierarchical map with string keys and a value (of any streamable type).
 
 ``` cpp
 ResultsMap rMap;
