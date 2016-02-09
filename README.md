@@ -6,6 +6,8 @@ Compiles with C++11 compatible compilers. Tested with gcc 4.4 and Visual Studio 
 
 #### Example usage
 
+ResultsMap is a dynamically buildable tree with a string label at each node and a value (of any streamable type) at each leaf.
+
 ``` cpp
 ResultsMap rMap;
 rMap["teststring"] = "this is a string";
@@ -22,10 +24,7 @@ double d = rMap["value"].to_f();
 string s = rMap["value"].to_s();
 
 cout << rMap << endl;
-
 ```
-
-ResultsMap is a dynamically buildable tree with a string label at each node.  
 
 Use operator[string] for leaf nodes and operator(string) for non-leaves.
 
