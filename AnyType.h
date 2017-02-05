@@ -104,22 +104,19 @@ namespace codepi{
          return content->toStream(ss);
       }
 
+      template<typename T> T* get(); // implemented below 
+
       template<typename T>
       T& getRef(){ 
          // throws bad_anyType_cast if failed
-         T* p=anyType_cast<T>(this);
+         T* p = get<T>();
          if(!p) throw bad_anyType_cast();
          return *p;
       }      
       
       template<typename T>
-      T* get(){ 
-         return anyType_cast<T>(this);
-      }
-
-      template<typename T>
       T to(){
-         T*p=anyType_cast<T>(this);
+         T* p = get<T>();
          if(p) return *p; //return if correct type
          else{ // try to convert otherwise
             std::stringstream ss;
@@ -251,6 +248,12 @@ namespace codepi{
    {
       return anyType_cast<ValueType>(const_cast<AnyType *>(operand));
    }
+
+   template<typename T>
+   T* AnyType::get(){ 
+      return anyType_cast<T>(this);
+   }
+
 
    inline std::ostream& operator<<(std::ostream& ss, AnyType& any){
       any.toStream(ss);
