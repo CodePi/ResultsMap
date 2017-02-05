@@ -34,7 +34,7 @@ namespace codepi{
       virtual const char * what() const throw()
       {
          return "boost_mod::bad_anyType_cast: "
-            "failed conversion using boost_mod::anyType_cast";
+            "failed conversion using anyType_cast";
       }
    };
 
