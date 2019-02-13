@@ -1,7 +1,13 @@
 CC=g++
+FLAGS=-std=c++0x
+TARGETS := testResultsMap
 
-testResultsMap: testResultsMap.cpp ../ResultsMap.h ../ResultsMap.cpp ../AnyType.h
-	$(CC) testResultsMap.cpp ../ResultsMap.cpp -std=c++0x -o testResultsMap
+TARGETS := $(patsubst %,$(TAG)%,$(TARGETS))
+
+all : $(TARGETS)
+
+$(TAG)% : %.cpp ../ResultsMap.h ../AnyType.h ../ResultsMap.cpp
+	$(CC) $< -o $@ $(FLAGS) ../ResultsMap.cpp
 
 clean:
-	rm testResultsMap
+	rm -f $(TARGETS)
