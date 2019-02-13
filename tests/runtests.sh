@@ -2,6 +2,4 @@
 
 set -e
 
-TAG="$1"
-
-./${TAG}testResultsMap
+./testResultsMap
