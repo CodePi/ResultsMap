@@ -2,7 +2,7 @@
 
 Serializable hierarchical dynamic data structure.  
 
-Compiles with C++11 compatible compilers. Tested with gcc 4.7-8.2 and Visual Studio 2012.
+Compiles with C++11 compatible compilers. Tested with gcc 4.7-9.0 and Visual Studio 2012.
 
 #### Example usage
 
