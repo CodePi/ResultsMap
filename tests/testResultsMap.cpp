@@ -54,8 +54,4 @@ int main(){
   }catch(bad_anyType_cast&e){
     cout<<"Testing exceptions: bad_anyType_cast caught\n";
   }
-
-  #ifdef WIN32
-  getchar();
-  #endif
 }
